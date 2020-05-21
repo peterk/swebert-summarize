@@ -8,3 +8,12 @@ Install requirements:
 Run it with 
 
 ```python summarize.py my_long_text.txt```
+
+# Simple web gui
+A simple web gui in Flask is provided for testing. To run it, install Docker and docker-compose. 
+
+To run it:
+
+```docker-compose up -d```
+
+On the first run the BERT-model is downloaded (this may take several minutes). The ser ver will be available on 0.0.0.0:80.
