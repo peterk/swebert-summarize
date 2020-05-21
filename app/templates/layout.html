@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Texta mig!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; style-src-attr 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; form-action 'self'; img-src 'self' data:">
+    <meta property="og:title" content="Summera text!">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:description" content="Summera text">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.example.com/static/sharepic.jpg">
+    <meta name="description" content="Summera text">
+    <meta name="author" content="Peter Krantz">
+    <meta name="referrer" content="no-referrer">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}?3" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    {% block body %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

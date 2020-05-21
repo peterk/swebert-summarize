@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+    {% include "_banner.html" %}
+    <div class="container">
+      <div class="row" role="main">
+	<div class="col-md-12">
+	  {% with messages = get_flashed_messages() %}
+	      {% if messages %}
+		  <div class="alert alert-danger mt-2 alert-dismissible fade show" style="text-align:left" role="alert">
+		  	<h2>Hoppla!</h2>
+		    {% for message in messages %}
+			{{ message }}
+		    {% endfor %}
+			<button type="button" class="close" data-dismiss="alert" aria-label="Stäng">
+    			<span aria-hidden="true">&times;</span>
+  			</button>
+		  </div>
+	      {% endif %}
+	  {% endwith %}  
+
+
+
+	  <form class="form-submitvideo" action="/" method="POST">
+	    <p>Ange text att summera nedan</p>
+	    <label for="text">Text</label>
+		<textarea name="text" id="text" class="form-control">{{text}}</textarea>
+	    <button class="btn btn-lg btn-primary btn-block" type="submit">Summera</button>
+	  </form>
+
+	  <div id="result">{{summary}}</div>
+	</div>
+      </div>
+
+    
+      <div class="row">
+	<div class="col-md-12">
+	  <hr>
+	  <footer>
+	    <p>Textamig.se är byggd av <a href="https://www.peterkrantz.com/">Peter Krantz</a> (just nu i pre-alfa-tejp-glasspinnar-version). Gick något sönder? <a href="mailto:peter.krantz@gmail.com?subject=textamigse">Rapportera fel och förslag</a>. {{completed_jobs}} klipp textade.</p>
+	  </footer>
+	</div>
+      </div>
+    </div>
+{% endblock %}
