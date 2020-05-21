@@ -1,5 +1,5 @@
 # swebert-summarize
-A tiny demo on how to summarize swedish texts using the BERT model from the National Library of Sweden. It uses the [Bert Extractive Summarizer library](https://pypi.org/project/bert-extractive-summarizer/).
+A tiny demo on how to summarize swedish texts using the [BERT model from the National Library of Sweden](https://github.com/Kungbib/swedish-bert-models). It uses the [Bert Extractive Summarizer library](https://pypi.org/project/bert-extractive-summarizer/).
 
 Install requirements:
 
