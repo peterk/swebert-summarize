@@ -1,2 +1,2 @@
 bert-extractive-summarizer==0.4.2
-torch==2.2.0
+torch==2.7.0
